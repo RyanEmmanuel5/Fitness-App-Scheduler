@@ -1,0 +1,17 @@
+.user-count,
+.event-count {
+    font-size: 3rem;
+    color: rgba(36, 36, 37, 1);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.user-count i {
+    font-size: 3rem;
+    margin-right: 35px; /* Space between icon and text */
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

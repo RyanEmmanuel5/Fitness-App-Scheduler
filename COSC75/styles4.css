@@ -1,0 +1,83 @@
+/* General styles */
+body {
+    background: url(BG1.png);
+    color: white;
+  }
+  
+  header .logo {
+    font-size: 1.8rem;
+  }
+
+  
+/* Parent Column (Center Left Alignment) */
+.text-center {
+    display: flex; /* Enable flexbox for alignment */
+    flex-direction: column; /* Stack the picture and username vertically */
+    align-items: center; /* Center horizontally within the column */
+    justify-content: center; /* Center vertically within the column */
+    height: 100%; /* Ensure the column stretches to align properly */
+  }
+  
+  /* Profile Picture */
+  .profile-picture {
+    width: 150px; /* Fix size of the circular profile picture container */
+    height: 150px;
+    background-color: #343a40; /* Background color of the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+  
+  /* Username */
+  .username-field {
+    width: 100%; /* Ensure username input fills column width */
+  }
+  .username-field input {
+    text-align: center; /* Center text in the input field */
+  }
+  .profile-picture img {
+    width: 100%; /* Ensure the image stretches to fill the container */
+    height: 100%; /* Height also fills the container */
+    object-fit: cover; /* Ensure the image fills the container without distortion */
+    display: block; /* Avoid any space around the image */
+}
+  
+  /* Form Styles */
+  .form-label {
+    font-size: 0.95rem;
+  }
+  
+  .form-control {
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .btn {
+    background-color: rgba(215, 97, 60, 1) !important; /* Button background */
+    color: rgba(36, 36, 37, 1) !important; /* Default font color */
+    border: none !important;
+    border-radius: 5px;
+    width: 100px;
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    text-align: center;
+    transition: color 0.3s ease, background-color 0.3s ease !important; /* Add smooth transition */
+    
+  }
+  
+  /* Hover State */
+  .btn:hover {
+    color: rgba(215, 211, 195, 1) !important; /* Font color on hover */
+  }
+  
+  /* Focus and Active States (to keep the original font color) */
+  .btn:focus, 
+  .btn:active {
+    color: rgba(36, 36, 37, 1) !important; /* Revert to original font color when clicked */
+    box-shadow: none !important; /* Remove box-shadow */
+    outline: none !important; /* Remove outline */
+  }
+  
